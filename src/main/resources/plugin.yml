@@ -1,0 +1,25 @@
+name: MyHunterPlugin
+version: 1.0.0
+main: com.example.myhunterplugin.HunterPlugin
+api-version: '1.21'
+author: eogd
+description: A hunter game plugin.
+softdepend: [Citizens]
+
+commands:
+  hunter:
+    description: Main command for the Hunter plugin.
+    usage: /hunter <subcommand> [args]
+    aliases: [ht]
+    permission: hunter.use
+
+permissions:
+  hunter.use:
+    description: Allows basic use of the /hunter command (like help).
+    default: true
+  hunter.admin:
+    description: Allows use of admin commands for HunterPlugin.
+    default: op
+  hunter.player:
+    description: Allows use of player-specific commands for HunterPlugin.
+    default: true
