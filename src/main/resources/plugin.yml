@@ -1,0 +1,23 @@
+name: TimedBanPlugin
+version: 1.0.114514
+main: eogd.TimedBanPlugin
+api-version: '1.21'
+author: eogd
+description: 一个可以定时封禁玩家的插件
+commands:
+  bantime:
+    description: 定时封禁一个玩家。时间单位：d(天), h(小时), m(分钟), s(秒)。例如 1d, 2h, 30m。
+    usage: /bantime <玩家> <时间 例如1d,2h,30m> [理由] <处决人>
+    permission: timedban.use
+    aliases: [tban]
+  timeunban:
+    description: 解除指定玩家的定时封禁
+    usage: /timeunban <玩家>
+    permission: timedban.unban
+permissions:
+  timedban.use:
+    description: 允许使用 /bantime 命令
+    default: op
+  timedban.unban:
+    description: 允许使用 /timeunban 命令
+    default: op

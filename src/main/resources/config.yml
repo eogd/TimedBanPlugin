@@ -1,0 +1,14 @@
+default-ban-reason: "未提供理由"
+ban-kick-message: |
+  <red>您由于 <gray><reason></gray> 被服务器封禁 <gold><total_duration></gold></red>
+  <gray>玩家：<white><player_name></white></gray>
+  <gray>处决人：<white><banner_name></white></gray>
+  <gray>剩余封禁时间：<white><remaining_time></white></gray>
+
+# 封禁后跳转到小黑屋服务器的设置
+redirect-on-ban:
+  enabled: false # 设置为 true 来启用此功能
+  # BungeeCord/Velocity 中配置的小黑屋服务器的名称
+  server-name: "魔理沙腿好白"
+  # 在尝试跳转前显示的提示信息
+  kick-message-before-redirect: "<gold>您已被封禁，正在将您传送到反省区域...</gold>"
